@@ -10,6 +10,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <header>
@@ -21,9 +23,9 @@
                 
             <li><a href="#home">Home</a></li>
             <li><a href="#services">Services</a></li>
-            <li><h1>CCC</h1></li>
-            <li><a href="#porty">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><h1 class="ccc">CCC</h1></li>
+            <li><a href="#porty">Projects</a></li>
+            <li><a href="#contact-info">Contact</a></li>
         </ul>
 
         
@@ -33,9 +35,11 @@
 
 </header>
 
+<div class="info-container">
     <div class="mine">
         <h2 class="montserrat"><span class="hi">Hi</span>, I'm <span class="hi">C</span>LARENCE <span class="hi">C</span>LAUDE  <span class="hi">C</span>RISTOBAL 
-            <br><u class="under">A FULL-STACK WEB DEVELOPER</u></h2>.
+            <br> <p class="typewriter-text"></p></h2>
+
         </h2>
 
         <ul class="introskill">
@@ -45,18 +49,22 @@
            
         </ul>
 
-        <div class="talk">
+        <div class="talk-container">
+          <div class="button-container">
+          <div class="talk">
+              <a href="mailto:claudecloud9@gmail.com?subject=Discussion%20Request&body=Hello%2C%20I%20would%20like%20to%20discuss%20..."><strong>Want to discuss?</strong></a>
+          </div>
+          
+            <button onclick="location.href='RESUME.pdf'" class="resume-button talk" download>Resume/CV</button>
+        </div>
+      </div>
 
-                <a href="https://www.facebook.com/clarencecrstbl"> <strong>Want to discuss?</strong></a>
-                
-        </div>
-<div class="lets">
-        <h3>Let's talk</h3>
-        </div>
         <div class="me">
 
         </div>
-    
+          
+       
+    </div>
     </div>
 
 
@@ -65,9 +73,13 @@
 
         <ul>
             <li><h2>UI/UX</h2></li>
+            <li><h2>|</h2></li>
             <li><h2>WEB DESIGN</h2></li>
+            <li><h2>|</h2></li>
             <li><h2>BACK-END</h2></li>
-            <li><h2>DEVELOPMENT</h2></li>
+            <li><h2>|</h2></li>
+            <li><h2>WORDPRESS</h2></li>
+            <li><h2>|</h2></li>
             <li><h2>SOCIAL MEDIA DESIGN</h2></li>
             
         </ul>
@@ -76,6 +88,58 @@
 
     </div>
 
+    <div class="skills-section" id="skills">
+        <h2>My Skills</h2>
+        <div class="skill">
+          <h3>HTML</h3>
+          <div class="progress-bar">
+            <div class="progress" data-percentage="95">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>CSS</h3>
+          <div class="progress-bar">
+            <div class="progress" data-percentage="90">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="progress-bar">
+            <div class="progress" data-percentage="80">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+            <h3>React JS</h3>
+            <div class="progress-bar">
+              <div class="progress" data-percentage="80">
+                <span class="progress-text">0%</span>
+              </div>
+            </div>
+          </div>
+        <div class="skill">
+          <h3>WordPress</h3>
+          <div class="progress-bar">
+            <div class="progress" data-percentage="80">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+        <div class="skill">
+          <h3>Figma</h3>
+          <div class="progress-bar">
+            <div class="progress" data-percentage="75">
+              <span class="progress-text">0%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
     <div class="services" id="services">
 
         <h1>Services</h1>
@@ -83,12 +147,14 @@
         <h3 class="s3">Here are the services I can provide to you.</h3>
     </div>
 
-    <div id="servgrid">
+
+
+    <div id="servgrid" class="animate-on-scroll">
 
         <div class="svgrid"><img src="images/serv icon.png">  UI/UX Designing </div>
         <div class="svgrid"><img src="images/serv icon.png"> Figma Prototyping </div>
         <div class="svgrid"><img src="images/serv icon.png"> Web Development </div>
-        <div class="svgrid"><img src="images/serv icon.png"> App UI/UX </div>
+        <div class="svgrid"><img src="images/serv icon.png"> WordPress Development </div>
         <div class="svgrid"><img src="images/serv icon.png"> Social Media Post Designing </div>
         <div class="svgrid"><img src="images/serv icon.png"> Full-Stack Developer </div>
         
@@ -96,39 +162,153 @@
     </div>
         
     <div class="portfko" id="porty">
-    <h1>Portfolio</h1>
+    <h1>Projects</h1>
     <h3 id="port3">Here's the showcase of my projects.</h3>
     
 </div>
-    <div class="portfolio">
+<div class="portfolio">
+  <!-- Projects 1 to 6 -->
+  <div class="portc animate-on-scroll" id="escafe">
+    <h3>Escafe</h3>
+    <p>A responsive coffee website showcasing an aesthetic and creative design.</p>
+    <button onclick="window.location.href='escafe.html'" class="learn-more">Learn More</button>
+  </div>
+
+  <div class="portc animate-on-scroll" id="BulSU-SCAN">
+    <h3>BulSU-SCAN: QR Code Attendance Generator</h3>
+    <p>
+      A mobile app developed with Android Studio and Firebase. It tracks student attendance via QR codes and generates
+      semester and subject-specific reports. Professors can create class-specific QR codes.
+    </p>
+    <button onclick="window.location.href='bulsu.html'" class="learn-more">Learn More</button>
+  </div>
+
+  <div class="portc animate-on-scroll" id="Haponesa">
+    <h3>Haponesa Garden Resort</h3>
+    <p>
+      A reservation system using CRUD operations with email verification. Prevents duplication of reservation dates.
+    </p>
+    <button onclick="window.location.href='haponesa.html'" class="learn-more">Learn More</button>
+  </div>
+
+  <div class="portc animate-on-scroll" id="creative-agency">
+    <h3>Watch Me Now</h3>
+    <p>
+      A React JS-powered movie tracking web app featuring TMDB API integration, search functionality, and error handling for non-searchable movies.
+    </p>
+    <button onclick="window.location.href='watchmenow.html'" class="learn-more">Learn More</button>
+  </div>
+
+  <div class="portc animate-on-scroll" id="eco-shop">
+    <h3>Cinema Bites</h3>
+    <p>
+      <strong>Figma Prototype</strong>: Designed a snack-ordering app tailored for movie theaters, featuring splash screens, interactive menus, and order confirmation.
+    </p>
+    <button onclick="window.location.href='cinemabites.html'" class="learn-more">Learn More</button>
+  </div>
+
+  <div class="portc animate-on-scroll" id="NevMet">
+    <h3>NevMet</h3>
+    <p>
+      A modern, user-friendly website redesign developed in HTML, CSS, and JavaScript with enhanced SEO and optimized accessibility.
+    </p>
+    <button onclick="window.location.href='nevmet.html'" class="learn-more">Learn More</button>
+  </div>
+</div>
 
 
-                <div class="portc" id="escafe"><h3>Escafe</h3>
-                        <p>A coffee responsive website wherein you can see the aesthetic of the website and creative design.</p>
-                        
-                
-                </div>
-
-
-
-                <div class="portc" id="BulSU-SCAN">
-                    <h3>BulSU-SCAN: QR Code Attendance Generator</h3>
-                    <p>BulSU-SCAN is a mobile app developed with Android Studio and Firebase, prototyped in Figma. It tracks student attendance via QR codes within the school, generates reports per semester and subject, and allows professors to create specific QR codes for their classes. </p>
-                </div>
-
-                <div class="portc" id="Haponesa">
-                        <h3>Haponesa Garden Resort</h3>
-                        <p>A Reservation System using CRUD(Create, Read, Update, and Delete) Operations and E-mail verification. Duplication of reservation dates in the calendar is not allowed.</p>
-                        
-                </div>
-
-              
-                
-                
-                
-
-
+<section class="certifications">
+  <h2>My Certifications</h2>
+  <div class="certifications-grid">
+    <!-- Certification 1 -->
+    <div class="cert-card">
+      <h3>Foundations of User Experience (UX) Design</h3>
+      <p>
+        <strong>Issuer:</strong> Google<br>
+        <strong>Issued:</strong> Nov 2024<br>
+        <strong>Credential ID:</strong> 84FOSRXW6DTW
+      </p>
+      <p><strong>Skills:</strong> User Experience (UX), UX Research, User-Centered Design, Design Sprints</p>
+      <a href="images/GOOGLE UX.png" target="_blank" class="view-cert">View Certificate</a>
     </div>
+
+    <!-- Certification 2 -->
+    <div class="cert-card">
+      <h3>Start the UX Design Process: Empathize, Define, and Ideate</h3>
+      <p>
+        <strong>Issuer:</strong> Google<br>
+        <strong>Issued:</strong> Nov 2024<br>
+        <strong>Credential ID:</strong> KOO2F2JNRISJ
+      </p>
+      <p><strong>Skills:</strong> User Research, User Persona, Empathy Mapping, User Journey</p>
+      <a href="images/UI-UX 2 CERT.png" target="_blank" class="view-cert">View Certificate</a>
+    </div>
+
+    <!-- Certification 3 -->
+    <div class="cert-card">
+      <h3>Build a Free Website with WordPress</h3>
+      <p>
+        <strong>Issuer:</strong> Coursera<br>
+        <strong>Issued:</strong> Aug 2024<br>
+        <strong>Credential ID:</strong> 3GPEFLXMBNAX
+      </p>
+      <p><strong>Skills:</strong> WordPress</p>
+      <a href="images/COURSERA WORDPRESS.png" target="_blank" class="view-cert">View Certificate</a>
+    </div>
+
+    <!-- Certification 4 -->
+    <div class="cert-card">
+      <h3>CyberSecurity BootCamp Webinar</h3>
+      <p>
+        <strong>Issuer:</strong> SKILLOGIC®<br>
+        <strong>Issued:</strong> Jul 2024
+      </p>
+      <p><strong>Skills:</strong> Cyber Defense, Cybersecurity</p>
+      <a href="images/CYBERSECURITY CERT.png" target="_blank" class="view-cert">View Certificate</a>
+    </div>
+
+    <!-- Certification 5 -->
+    <div class="cert-card">
+      <h3>Programming for Beginners Using Python</h3>
+      <p>
+        <strong>Issuer:</strong> Department of Information and Communications Technology<br>
+        <strong>Issued:</strong> Jun 2022<br>
+        <strong>Credential ID:</strong> d09ea29f-8fbf-44d2-8f2e-5a62455f7e3f
+      </p>
+      <p><strong>Skills:</strong> Python (Programming Language)</p>
+      <a href="images/DICT PYTHON CERTIFICATE.jpg" target="_blank" class="view-cert">View Certificate</a>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <div class="contact-info-section animate-on-scroll" id="contact-info">
+        <h2>Contact Information</h2>
+        <div class="contact-info">
+          <div class="contact-item">
+            <i class="fas fa-map-marker-alt"></i>
+            <h4>Address</h4>
+            <p>Santa Maria, Bulacan</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <h4>Phone</h4>
+            <p>+63 9285327549</p>
+          </div>
+          <div class="contact-item">
+            <i class="fas fa-envelope"></i>
+            <h4>Email</h4>
+            <p>claudecloud9@gmail.com</p>
+          </div>
+        </div>
+      </div>
+
+
+
+
 
     <footer>
         <div class="footer-content" id="contact">
